@@ -13,16 +13,50 @@
     <main>
         <section>
             <div class="caixa_RPS">
-                <h1 class="h1_RPS">Pedra, Papel, Tesoura</h1>
-                <div class="player_choice">
-                    <img class="RPS_button" src="./src/assets/stone_PNG13601.png" alt="">
-                    <img class="RPS_button" src="./src/assets/pngtree-stylish-white-torn-paper-texture-png-image_9234159.png" alt="">
-                    <img class="RPS_button" src="./src/assets/pngtree-vector-scissors-png-image_8562922.png" alt="">
+                <h1 class="titulo">Pedra, Papel, Tesoura</h1>
+
+                <div class="placar_box">
+                    <span class="ponto_player">0</span>X<span class="ponto_player">0</span>
                 </div>
-                <button class="jogar_RPS">jogar</button>
-                <h1 class="h1_RPS" id="Resultado">Resultado</h1>
+
+                <div class="conteiner_jogo">
+
+                    <div class="player_choice">
+                        <h1 class="h1_player">Sua Escolha:</h1>
+                        <button class="RPS_button" id="button_pedra">
+                            <img class="RPS_image"  src="./src/assets/stone_PNG13601.png" alt="">
+                        </button>
+                        <button class="RPS_button" id="button_papel">
+                            <img class="RPS_image"  src="./src/assets/pngtree-stylish-white-torn-paper-texture-png-image_9234159.png" alt="">
+                        </button>
+                        <button class="RPS_button" id="button_tesoura">
+                            <img class="RPS_image" src="./src/assets/pngtree-vector-scissors-png-image_8562922.png" alt="">
+                        </button>
+                    </div>
+
+
+
+                    <div class="bot_choice">
+                        <h1 class="h1_bot">Escolha Bot:</h1>
+                        <button class="RPS_button_bot" id="button_pedraBot">
+                            <img class="RPS_image"  src="./src/assets/stone_PNG13601.png" alt="">
+                        </button>
+                        <button class="RPS_button_bot" id="button_papelBot">
+                            <img class="RPS_image"  src="./src/assets/pngtree-stylish-white-torn-paper-texture-png-image_9234159.png" alt="">
+                        </button>
+                        <button class="RPS_button_bot" id="button_tesouraBot">
+                            <img class="RPS_image" src="./src/assets/pngtree-vector-scissors-png-image_8562922.png" alt="">
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <button class="jogar_RPS" id="button_jogar">jogar</button>
+                <h1 class="titulo" id="Resultado">Resultado</h1>
             </div>
         </section>
     </main>
+    <script src="./src/script.js" defer></script>
 </body>
 </html>

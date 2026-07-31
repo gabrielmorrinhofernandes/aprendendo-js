@@ -25,13 +25,75 @@ section{
 .caixa_RPS{
     background-color: rgba(25, 43, 63);
     width: 67rem;
-    height: 40rem;
+    height: 43rem;
+}
+.titulo{
+    color:  rgb(0, 12, 41);
+    text-align: center;
 }
 .h1_RPS{
-    color:  rgba(0, 132, 201);
+    color:  rgb(0, 12, 41);
+}
+.h1_player{color:  rgba(0, 132, 201);}
+.h1_bot{
+color:  rgb(201, 137, 0);
+}
+.conteiner_jogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+.player_choice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.placar_box{
+text-align: center;
+width: 100%;
+display: block;
+}
+.bot_choice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.RPS_image{
+    width: 7rem;
+    height: 7rem;
+    
+    align-items: center;
 }
 .RPS_button{
-    width: 10rem;
-    height: 10rem;
+    background: none;
+    border: none;
+    margin: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
     cursor: pointer;
+}
+.RPS_button_bot{
+    background: none;
+    border: none;
+    margin: 1rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.RPS_botaoSelecionado{
+    border: solid;
+    border-color: rgba(0, 132, 201);
+}
+.RPS_botaoSelecionado_bot{
+    border: solid;
+    border-color: rgb(201, 137, 0);
+}
+.jogar_RPS{
+    width: 10rem;
+    height: 5rem;
+    background-color: rgba(0, 132, 201);
+    cursor: pointer;
+    display: block;
+    margin: auto;
 }
