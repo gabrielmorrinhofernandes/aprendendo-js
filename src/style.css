@@ -13,6 +13,18 @@ header{
     padding-bottom: 30px;
     border-color: black;
 }
+.selected_game{
+    background-color: rgba(25, 43, 63);
+    border:solid;
+    border-color: rgba(0, 132, 201);
+}
+.page{
+    color:  rgba(0, 132, 201);
+}
+.header_box{
+    display: flex;
+    justify-content: space-around;
+}
 .header_text{
     font-size: 2.5rem;
     color: white;

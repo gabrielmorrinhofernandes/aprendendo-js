@@ -58,15 +58,21 @@ function Jogar(){
         botaoTesoura_bot.classList.add('RPS_botaoSelecionado_bot');
     }
     if(playerChoice === 'pedra' && botChoice === 'tesoura' || playerChoice === 'papel' && botChoice === 'pedra' || playerChoice === 'tesoura' && botChoice === 'papel'){
-        document.getElementById('Resultado').innerHTML = "ganhou";
+        document.getElementById('Resultado').innerHTML = "ganhou, " + playerChoice + " ganhou de " + botChoice;
+        scorePlayer++;
+        document.getElementById('scorePlayer').innerHTML = scorePlayer;
+
+
     }
     else if(playerChoice === 'pedra' && botChoice === 'pedra' || playerChoice === 'papel' && botChoice === 'papel' || playerChoice === 'tesoura' && botChoice === 'tesoura'){
-        document.getElementById('Resultado').innerHTML = "empate";
+        document.getElementById('Resultado').innerHTML = "empate, " + playerChoice + " e " + botChoice + " são iguais";
     }
     else if(playerChoice !== 'pedra' && playerChoice !== 'papel' && playerChoice !== 'tesoura'){
-        document.getElementById('Resultado').innerHTML = "erro, escolha não esperada";
+        document.getElementById('Resultado').innerHTML = "erro, escolha esperada";
     }
     else{
-        document.getElementById('Resultado').innerHTML = "perdeu";
+        document.getElementById('Resultado').innerHTML = "perdeu, " + botChoice + " ganhou de " + playerChoice;
+        scoreBot++;
+        document.getElementById('scoreBot').innerHTML = scoreBot;
     }
 }
