@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/style.css">
+    <title>LOGIN</title>
+    <style>
+        
+        .caixasenha{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+            margin: 13% 0;
+            
+        }
+
+
+
+    </style>
 </head>
 <body>
-    <header>
-    <h1 class="header_text">GamesHub</h1>
-    <div class="header_box">
-    <h2 class="page selected_game">RPS</h2>
-    <h2 class="page selected_game">TIC TAC TOE</h2>
-    <h2 class="page">QUIZ</h2>
-    <h1>JOGO DA VELHA</h1>
-    <button></button>
-    <button></button>
-    <button></button><br>
-    <button></button>
-    <button></button>
-    <button></button><br>
-    <button></button>
-    <button></button>
-    <button></button>
+</body>
+    <div class="caixasenha">
+        <h2> insira seu nome de usuário e senha</h2>
+        <form method="post">
+            <label for="texto-01">Usuário</label><br>
+            <input type="text"
+            id="texto_form"
+            name="texto-01"></input><br>
+            <label for="texto-02">senha</label><br>
+            <input type="password"
+            id="texto_form"
+            name="texto-02"></input><br>
+            <input type="submit"
+            id="botao_submit"
+            name="botao_01"><br>
+        </form>
     </div>
-    </body>
+</body>
 </html>
